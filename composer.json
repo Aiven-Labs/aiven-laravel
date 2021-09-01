@@ -1,0 +1,12 @@
+{
+    "name": "lorna/aiven-laravel",
+    "description": "Artisan helpers for working with Aiven databases and Laravel",
+    "license": "Apache2",
+    "authors": [
+        {
+            "name": "Lorna Jane Mitchell",
+            "email": "lorna@lornajane.net"
+        }
+    ],
+    "require": {}
+}
