@@ -16,5 +16,10 @@
               "LornaJane\\AivenLaravel\\AivenLaravelServiceProvider"
           ]
       }
+    },
+    "autoload": {
+        "psr-4": {
+            "LornaJane\\AivenLaravel\\": "src/"
+        }
     }
 }

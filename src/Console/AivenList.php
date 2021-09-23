@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace LornaJane\AivenLaravel\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Http;
