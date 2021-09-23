@@ -32,7 +32,7 @@ class AivenLaravelServiceProvider extends ServiceProvider
     
     $this->publishes([
       __DIR__.'/../config/aiven.php' => config_path('aiven.php'),
-    ], 'config');
+    ]);
   }
 }
 
