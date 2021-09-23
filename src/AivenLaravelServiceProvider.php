@@ -28,11 +28,11 @@ class AivenLaravelServiceProvider extends ServiceProvider
         AivenPowerup::class,
         AivenState::class,
       ]);
-
-      $this->publishes([
-        __DIR__.'/../config/aiven.php' => config_path('aiven.php'),
-      ], 'config');
     }
+    
+    $this->publishes([
+      __DIR__.'/../config/aiven.php' => config_path('aiven.php'),
+    ], 'config');
   }
 }
 
