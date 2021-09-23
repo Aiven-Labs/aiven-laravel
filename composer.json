@@ -8,5 +8,13 @@
             "email": "lorna@lornajane.net"
         }
     ],
-    "require": {}
+    "require": {
+    },
+    "extra": {
+      "laravel": {
+          "providers": [
+              "LornaJane\\AivenLaravel\\AivenLaravelServiceProvider"
+          ]
+      }
+    }
 }
