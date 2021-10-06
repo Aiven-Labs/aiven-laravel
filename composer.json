@@ -1,5 +1,5 @@
 {
-    "name": "lorna/aiven-laravel",
+    "name": "aiven/aiven-laravel",
     "description": "Artisan helpers for working with Aiven databases and Laravel",
     "license": "Apache2",
     "authors": [
