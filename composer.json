@@ -1,7 +1,7 @@
 {
     "name": "aiven/aiven-laravel",
     "description": "Artisan helpers for working with Aiven databases and Laravel",
-    "license": "Apache2",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Lorna Jane Mitchell",
