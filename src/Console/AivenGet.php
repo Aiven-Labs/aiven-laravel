@@ -79,9 +79,21 @@ class AivenGet extends Command
 
             $type = $data["service"]["service_type"];
             switch($type) {
+                case "mysql":
+                    $this->line("DATABASE_URL=$url");
+                    break;
+
                 case "pg":
                     $this->line("DATABASE_URL=$url");
                     $this->line("DB_CONNECTION=pgsql");
+                    break;
+
+                case "redis":
+                    $this->line("REDIS_URL=$url");
+                    break;
+
+                case "opensearch":
+                    $this->line($url);
                     break;
 
                 default:
