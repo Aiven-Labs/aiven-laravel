@@ -43,7 +43,7 @@ class AivenList extends Command
         $token = config("aiven.api_token");
         if(!$token) {
             $this->error('Set an Aiven API token as AIVEN_API_TOKEN in the environment');
-            return 1;
+            return $this::FAILURE;
         }
 
         // make sure we have a project
@@ -54,7 +54,7 @@ class AivenList extends Command
 
         if(!$project) {
             $this->error('Set a project with --project or configure AIVEN_DEFAULT_PROJECT in the environment');
-            return 1;
+            return $this::FAILURE;
         }
 
         // make the API call
@@ -75,6 +75,6 @@ class AivenList extends Command
         } else {
             $this->info("No data");
         }
-        return 0;
+        return $this::SUCCESS;
     }
 }

@@ -44,7 +44,7 @@ class AivenState extends Command
         $token = config("aiven.api_token");
         if(!$token) {
             $this->error('Set an Aiven API token as AIVEN_API_TOKEN in the environment');
-            return 1;
+            return $this::FAILURE;
         }
 
         // make sure we have a project
@@ -55,7 +55,7 @@ class AivenState extends Command
 
         if(!$project) {
             $this->error('Set a project with --project or configure AIVEN_DEFAULT_PROJECT in the environment');
-            return 1;
+            return $this::FAILURE;
         }
 
         // make sure we have a service
@@ -63,7 +63,7 @@ class AivenState extends Command
             // err, cool?
         } else {
             $this->error('Use --service to specify which database to target');
-            return 1;
+            return $this::FAILURE;
         }
 
         // make the API call
@@ -73,10 +73,10 @@ class AivenState extends Command
         if($response->status() == 200) {
             $data = json_decode($response->body(), true);
             $this->info($service . " service state: " . $data["service"]["state"]);
-            return 0;
+            return $this::SUCCESS;
         }
 
         // no success response
-        return 1;
+        return $this::FAILURE;
     }
 }

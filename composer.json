@@ -9,6 +9,8 @@
         }
     ],
     "require": {
+      "illuminate/console": "^7.0|^8.0",
+      "ext-json": "*"
     },
     "extra": {
       "laravel": {
