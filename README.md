@@ -102,3 +102,6 @@ If you add the config to your environment and still can't connect, check that yo
 ## Get in touch
 
 Questions? Problems? Open an issue and let us know.
+
+## Trademarks
+MySQL, OpenSearch, PostgreSQL, Redis and Laravel are trademarks and property of their respective owners. All product and service names used in this website are for identification purposes only and do not imply endorsement.
